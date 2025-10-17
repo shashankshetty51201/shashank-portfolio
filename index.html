@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Shashank K</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Shashank K</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Particle System -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Morphing Background Elements -->
+        <div class="morphing-bg" style="top: 10%; left: 10%;"></div>
+        <div class="morphing-bg" style="top: 60%; right: 10%;"></div>
+        <div class="morphing-bg" style="bottom: 20%; left: 50%;"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title glowing-text">
+                    Hi, I'm <span class="highlight">Shashank K</span>
+                </h1>
+                <h2 class="hero-subtitle wave-animation">WordPress Developer & Zoho Expert</h2>
+                <p class="hero-description">
+                    I specialize in WordPress development with Elementor & WPBakery, custom theme design, WooCommerce integration, and comprehensive Zoho CRM solutions including workflow automation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary enhanced-hover">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary enhanced-hover">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="WhatsApp Image 2025-10-16 at 20.48.31_009e39d9.jpg" alt="" class="profile-img">
+                    <div class="floating-elements">
+                        <div class="floating-element element-1"></div>
+                        <div class="floating-element element-2"></div>
+                        <div class="floating-element element-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About</h2>
+                <p class="section-subtitle">A quick snapshot of who I am and how I help</p>
+            </div>
+            <div class="about-grid">
+                <!-- Bio Card -->
+                <div class="about-card">
+                    <div class="about-card-header">
+                        <div class="about-avatar">
+                            <img src="WhatsApp Image 2025-10-16 at 20.57.00_d0f019ef.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="about-name">Shashank K</h3>
+                            <p class="about-role">WordPress Developer · Zoho Expert</p>
+                        </div>
+                    </div>
+                    <p class="about-bio">
+                        I specialize in WordPress development with Elementor & WPBakery page builders, custom theme design, WooCommerce integration, and comprehensive Zoho CRM solutions including workflow automation.
+                    </p>
+                    <ul class="about-highlights">
+                        <li><i class="fas fa-check"></i> WordPress Development with Elementor & WPBakery Page Builders</li>
+                        <li><i class="fas fa-check"></i> Custom Theme Design & WooCommerce Integration</li>
+                        <li><i class="fas fa-check"></i> Zoho CRM, Recruit, Desk, Campaigns & Workflow Automation</li>
+                    </ul>
+                    <div class="about-chips">
+                        <span class="chip">WordPress</span>
+                        <span class="chip">Elementor</span>
+                        <span class="chip">WPBakery</span>
+                        <span class="chip">WooCommerce</span>
+                        <span class="chip">Zoho CRM</span>
+                        <span class="chip">Zoho Recruit</span>
+                        <span class="chip">Zoho Desk</span>
+                        <span class="chip">Zoho Campaigns</span>
+                        <span class="chip">Workflow Automation</span>
+                    </div>
+                    <div class="about-metrics">
+                        <div class="metric">
+                            <span class="metric-value" data-target="2" data-suffix="+">0</span>
+                            <span class="metric-label">Years</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value" data-target="10" data-suffix="+">0</span>
+                            <span class="metric-label">Projects</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value" data-target="5" data-suffix="+">0</span>
+                            <span class="metric-label">Clients</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Card -->
+                <div class="about-visual">
+                    <div class="about-visual-ring">
+                        <img src="ChatGPT Image Oct 16, 2025, 09_12_26 PM.png" alt="Capabilities overview image" width="520" height="380" style="max-width:100%;height:auto;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">What I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>WordPress Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-wordpress"></i>
+                            <span>WordPress</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>WooCommerce</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Custom Themes</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>SEO Optimization</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <span>WPBakery</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Elementor</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Website Speed</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsiveness</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Zoho Tools Specialist</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Zoho CRM</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Zoho SalesIQ</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-headset"></i>
+                            <span>Zoho Desk</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Zoho Projects</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Zoho Social</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bullhorn"></i>
+                            <span>Zoho Campaigns</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-video"></i>
+                            <span>Zoho Meeting</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Zoho Forms</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Zoho Recruit</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Zoho Bookings</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-poll"></i>
+                            <span>Zoho Survey</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-desktop"></i>
+                            <span>Zoho Assist</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-table"></i>
+                            <span>Zoho Sheets</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Zoho Mail</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Full-Stack Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            
+            <!-- Projects Grid (custom layout) -->
+            <div class="projects-grid custom-projects">
+                <!-- 1. Manush DigiTech -->
+                <div class="project-item">
+                    <div class="project-header">
+                        <img class="project-logo manush-logo" src="websitewhite.webp" alt="Manush DigiTech logo">
+                        <h3 class="project-title">Manush Digitech</h3>
+                    </div>
+                    <p class="project-desc">Manush Digitech is a Noida-based digital marketing agency specializing in website development, SEO, PPC, and social media marketing. They use data-driven strategies to help startups and small businesses grow online with affordable, effective solutions.</p>
+                    <div class="tool-tags" style="margin-top: 5px;">
+                        <span class="tool-tag">WordPress</span>
+                        <span class="tool-tag">Elementor</span>
+                        <span class="tool-tag">Digital Agency</span>
+                    </div>
+                    <a class="know-more" href="https://manushdigitech.in/" target="_blank" rel="noopener"><i class="fas fa-arrow-right"></i><span>Know More</span></a>
+                </div>
+
+                <!-- 2. Future Academy -->
+                <div class="project-item">
+                    <div class="project-header">
+                        <img class="futureacad-logo" src="https://www.google.com/s2/favicons?domain=futureacad.com&sz=64" alt="Future Academy logo">
+                        <h3 class="project-title">FutureAcad</h3>
+                    </div>
+                    <p class="project-desc">FutureAcad is an Indian edtech platform by Rooman Technologies offering job-oriented training in AI, Data Science, Cybersecurity, Cloud, and VLSI. Their programs include hands-on projects, mentorship, and placement support to prepare students for careers in emerging technologies.</p>
+                    <div class="tool-tags">
+                        <span class="tool-tag">WordPress</span>
+                        <span class="tool-tag">Elementor</span>
+                        <span class="tool-tag">Education</span>
+                    </div>
+                    <a class="know-more" href="https://futureacad.com/" target="_blank" rel="noopener"><i class="fas fa-arrow-right"></i><span>Know More</span></a>
+                </div>
+
+                <!-- 3. Rooman Technologies -->
+                <div class="project-item">
+                    <div class="project-header">
+                        <img class="project-logo" src="https://www.google.com/s2/favicons?domain=rooman.com&sz=64" alt="Rooman Technologies logo">
+                        <h3 class="project-title">Rooman Technologies</h3>
+                    </div>
+                    <p class="project-desc">Rooman Technologies is a leading Indian IT training and skill development institute with over 26 years of experience. They offer industry-recognized programs in Networking, Cybersecurity, Cloud Computing, Data Science, and VLSI, helping students gain certifications and placement opportunities.</p>
+                    <div class="tool-tags">
+                        <span class="tool-tag">WordPress</span>
+                        <span class="tool-tag">Elementor</span>
+                        <span class="tool-tag">Education</span>
+                    </div>
+                    <a class="know-more" href="https://rooman.com/" target="_blank" rel="noopener"><i class="fas fa-arrow-right"></i><span>Know More</span></a>
+                </div>
+
+                <!-- 4. Online Fashion Store -->
+                <div class="project-item">
+                    <div class="project-header">
+                        <img class="fashion-stride-logo" src="Logo-1.webp" alt="Fashion Stride logo">
+                        <h3 class="project-title">Fashion Stride</h3>
+                    </div>
+                    <p class="project-desc">Fashion Stride is a South African online store offering electronics, fashion items, fragrances, gaming consoles, and more. They provide flexible payment options and convenient collection points across the country for easy access.</p>
+                    <div class="tool-tags">
+                        <span class="tool-tag">WordPress</span>
+                        <span class="tool-tag">Elementor</span>
+                        <span class="tool-tag">WooCommerce</span>
+                    </div>
+                    <a class="know-more" href="https://fashionstride.co.za/" target="_blank" rel="noopener"><i class="fas fa-arrow-right"></i><span>Know More</span></a>
+                </div>
+
+                <!-- 5. Rooman Technologies -->
+                <div class="project-item">
+                    <div class="project-header">
+                        <img class="project-logo" src="https://www.google.com/s2/favicons?domain=rooman.net&sz=128" alt="Rooman Technologies logo">
+                        <h3 class="project-title">Rooman Technologies</h3>
+                    </div>
+                    <p class="project-desc">Rooman Technologies is a leading Indian IT training institute offering employment-linked courses in Networking, Cybersecurity, Cloud Computing, Data Science, and VLSI. With over 24 years of experience and 198+ centers nationwide, they focus on tech-enabled learning and skill development for career growth.</p>
+                    <div class="tool-tags">
+                        <span class="tool-tag">WordPress</span>
+                        <span class="tool-tag">Elementor</span>
+                        <span class="tool-tag">Education</span>
+                    </div>
+                    <a class="know-more" href="https://rooman.net/" target="_blank" rel="noopener"><i class="fas fa-arrow-right"></i><span>Know More</span></a>
+                </div>
+
+                <!-- 6. TFS Emporium -->
+                <div class="project-item">
+                    <div class="project-header">
+                        <img class="tfs-emporium-logo" src="https://www.google.com/s2/favicons?domain=tfsemporium.com&sz=64" alt="TFS Emporium logo">
+                        <h3 class="project-title">TFS Emporium</h3>
+                    </div>
+                    <p class="project-desc">TFS Emporium is a South African online store for electronics, fashion, beauty, and accessories. Offers great deals, free shipping over R750, reseller opportunities, discounts, installments, and warranties on select items.</p>
+                    <div class="tool-tags">
+                        <span class="tool-tag">WordPress</span>
+                        <span class="tool-tag">Elementor</span>
+                        <span class="tool-tag">WooCommerce</span>
+                    </div>
+                    <a class="know-more" href="https://tfsemporium.com/" target="_blank" rel="noopener"><i class="fas fa-arrow-right"></i><span>Know More</span></a>
+                </div>
+
+                <!-- 7. FermiHDI Hyperscale Dataset Storage -->
+                <div class="project-item">
+                    <div class="project-header">
+                        <img class="project-logo fermihdi-logo" src="FermiHDI-Logo-Hz-White-1.png" alt="FermiHDI logo">
+                        <h3 class="project-title">FermiHDI Hyperscale Dataset Storage</h3>
+                    </div>
+                    <p class="project-desc">FermiHDI is a New Zealand-based tech company specializing in hyperscale, distributed data storage solutions for datasets with over a billion records. Their platform ensures high performance, data sovereignty, and scalability, supporting AI, analytics, and scientific applications.</p>
+                    <div class="tool-tags">
+                        <span class="tool-tag">WordPress</span>
+                        <span class="tool-tag">Elementor</span>
+                        <span class="tool-tag">Business</span>
+                    </div>
+                    <a class="know-more" href="http://206.189.33.173/" target="_blank" rel="noopener"><i class="fas fa-arrow-right"></i><span>Know More</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you need WordPress development, Zoho CRM implementation, or front-end solutions, I'd love to hear from you!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>shashankshetty51201@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9353413612</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Yeshwanthpur, Bangalore, Karnataka</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/shashankshetty51201" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shashankshetty-shetty-173169340/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:shashankshetty51201@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+919353413612" class="social-link"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/919353413612" class="social-link whatsapp-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Mobile Number" maxlength="10" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary send-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="currentYear">2024</span> Shashank K. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-whatsapp-wrapper" aria-label="WhatsApp quick chat">
+        <a href="https://wa.me/919353413612" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <span class="floating-whatsapp-label">Need Help</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
