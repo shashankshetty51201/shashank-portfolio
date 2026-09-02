@@ -528,16 +528,17 @@ document.addEventListener('DOMContentLoaded', () => {
 function animateStatsOnce() {
     const metrics = document.querySelectorAll('.metric .metric-value');
     metrics.forEach(metric => {
-        const target = parseInt(metric.getAttribute('data-target'), 10) || 0;
+        const target = parseFloat(metric.getAttribute('data-target')) || 0;
         const suffix = metric.getAttribute('data-suffix') || '';
         const durationMs = 3600; // slower animation
+        const decimals = Number.isInteger(target) ? 0 : 1;
         const startTime = performance.now();
         function update(now) {
             const elapsed = now - startTime;
             const progress = Math.min(elapsed / durationMs, 1);
             // easeOutCubic for smoother slow finish
             const eased = 1 - Math.pow(1 - progress, 3);
-            const value = Math.floor(eased * target);
+            const value = (eased * target).toFixed(decimals);
             metric.textContent = value + suffix;
             if (progress < 1) requestAnimationFrame(update);
         }
