@@ -1784,6 +1784,16 @@ body.dark-theme .footer {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    .projects-grid.fade-in {
+        opacity: 1;
+        transform: none;
+    }
+
+    .custom-projects .project-item {
+        height: auto;
+        min-height: 420px;
+    }
     
     .project-tabs {
         justify-content: center;
@@ -2185,4 +2195,3 @@ body.dark-theme .floating-whatsapp-label::before {
         display: none;
     }
 }
-
